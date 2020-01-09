@@ -1,0 +1,62 @@
+<html>
+<head>
+  <title>로그인페이지</title>
+  <style>
+    /* 태그명을 바로 가리킬 때 */
+    body {
+      background-color: black;
+      color: white;
+    }
+    /* class를 만들어 가리킬 때 */
+    .mytitle {
+      color: yellow;
+    }
+    /* 태그선택자*/
+    /* 모든 P 태그를 지칭 */
+    p { 
+      background: yellowgreen;
+      color: darkgreen;
+    }
+    /* class1 클래스를 가진 모든 태그를 지칭 */
+    /* 케이스1에 적용됩니다. */
+    .class1 { 
+      background: yellowgreen; 
+      color: darkgreen; 
+    }
+
+    /* div 태그 중 class2 클래스를 가진 태그만 지칭 */
+    /* 케이스3에만 적용됩니다. 케이스2는 p 태그이므로, 적용되지 않습니다.*/
+    div.class2 {
+      background: darkgreen;
+      color: yellowgreen;
+      width: 100px;
+      height: 500px;
+      border: 1px solid #000;
+    }
+    
+  </style>
+</head>
+<body>
+  <p class="class1">케이스1</p>
+
+  <a class="class2">케이스2</a> 
+  <div class="class2">케이스3</div>
+
+  <p>태그 선택자(Type Selector)</p>  
+
+  <p>태그 선택자(Type Selector)</p> 
+
+  <p>태그 선택자(Type Selector)</p> 
+
+  <h1 class="mytitle">
+    로그인 페이지
+  </h1>
+  <div class="mytitle">
+    ID: 
+    <input type="text">
+    PW: 
+    <input type="password">   
+  </div>
+  <button>로그인하기</button>
+</body>
+</html>
